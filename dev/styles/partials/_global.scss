@@ -1,0 +1,26 @@
+.wrapper {
+	width: 1080px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, p {margin: 0; color: red;}
+
+ul {
+	padding: 0;
+	li {
+		list-style-type: none;
+	}
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	margin: 0;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+}
