@@ -1,0 +1,26 @@
+.main-video {
+    background: #fff;
+    padding: 75px 30px;
+}
+
+.video-title {
+    text-align: center;
+}
+
+.main-wrapper-video {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.video-info-wrapper {
+    display: flex;
+}
+
+.left-col, .right-col {
+    margin: 50px 30px 0 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}

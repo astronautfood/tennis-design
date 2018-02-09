@@ -135,11 +135,16 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .wrapper {
   width: 1080px;
   max-width: 90%;
-  margin: 0 auto; }
+  margin: 100px auto; }
 
 h1, h2, h3, h4, p {
-  margin: 0;
-  color: red; }
+  margin: 0; }
+
+h2 {
+  margin-bottom: 40px; }
+
+p {
+  margin-bottom: 15px; }
 
 ul {
   padding: 0; }
@@ -158,15 +163,11 @@ a {
 
 .border {
   margin-top: 40px;
-  padding-top: 30px;
   border: 3px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative; }
-
-.hero-image {
-  height: 80vh; }
 
 .left-square {
   border: 3px solid black;
@@ -192,14 +193,106 @@ a {
   display: flex;
   justify-content: center; }
 
-ul {
+ul.nav {
   margin: 0; }
 
-ul li {
+ul.nav li {
   height: 10px; }
 
-li a {
+.nav li a {
   width: 25px;
   height: 3px;
   background: #000;
   border-radius: 20%; }
+
+.floater-img {
+  width: 200px;
+  position: absolute;
+  position: fixed; }
+
+.shroom-blue {
+  top: 63%;
+  right: -3%; }
+
+.moogu {
+  top: -2%;
+  left: -6%; }
+
+.shroom-red {
+  top: 80%;
+  left: 8%; }
+
+.hero-wrapper {
+  background: #000; }
+
+.hero-image {
+  height: 80vh; }
+
+.hero .left-square, .right-menu {
+  background: #FFF; }
+
+.social {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 30px; }
+
+.nav-social {
+  display: flex;
+  flex-direction: row; }
+
+.nav-social img {
+  width: 30px;
+  margin-right: 10px; }
+
+.main-desc {
+  display: flex;
+  padding: 75px 30px;
+  background: #fff; }
+
+.desc-wrapper {
+  width: 50%;
+  padding-right: 25px; }
+
+.desc-wrapper-img {
+  margin-top: 70px;
+  width: 50%; }
+
+.main-maker {
+  background: #fff;
+  display: flex;
+  padding: 75px 30px; }
+
+.maker-wrapper-img {
+  width: 50%;
+  padding-right: 25px;
+  margin-top: 70px; }
+
+.maker-wrapper {
+  width: 50%; }
+
+.desc-wrapper {
+  width: 50%;
+  padding-right: 25px; }
+
+.main-video {
+  background: #fff;
+  padding: 75px 30px; }
+
+.video-title {
+  text-align: center; }
+
+.main-wrapper-video {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.video-info-wrapper {
+  display: flex; }
+
+.left-col, .right-col {
+  margin: 50px 30px 0 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify; }
