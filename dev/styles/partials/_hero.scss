@@ -1,9 +1,10 @@
 .hero {
     background: $burg;
+    height: 100vh;
 }
 
 .logo {
-    padding: 55px;
+    padding: 40px;
     img {
         width: 200px;
         margin: 0 auto;
@@ -11,20 +12,20 @@
 }
 
 .welcome {
-    font-size: 185px;
+    font-size: 175px;
     text-align: center;
     color: #fff;
     letter-spacing: 1.6px;
     span {
         display: block;
-        font-size: 165px;
+        font-size: 130px;
     }
 }
 
 .welcome-subtitle {
     text-align: center;
     color: $cream;
-    font-size: 35px;
+    font-size: 32px;
     letter-spacing: 1.6px;
     margin-bottom: 60px;
     span {
@@ -33,7 +34,7 @@
         &::after {
             content: '';
             display: block;
-            width: 425px;
+            width: 385px;
             border-bottom: 2px solid $cream;
             margin: 0 auto;
         }

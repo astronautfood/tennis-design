@@ -1,0 +1,49 @@
+.sign-up {
+    background: $cream;
+    margin-top: -20px;
+    padding-top: 80px;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    .fb {
+       margin-right: 20px;
+    }
+    .twitter {
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+}
+
+.sign-up-call h4 {
+    text-align: center;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .email {
+        margin:0 auto 20px;
+        max-width: 400px;
+        width: 100%;
+        padding: 8px 70px 6px;
+        font-size: 20px;
+    }
+    .sign-up-button {
+        margin: 0 auto 80px;
+        width: 195px;
+        color: $cream;
+        background-color: $burg;
+        padding: 8px 70px 6px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+}
+
+

@@ -137,7 +137,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   src: url("/public/styles/Carrosserie.otf") format("opentype"); }
 
 body {
-  font-family: 'Carrosserie'; }
+  font-family: 'Carrosserie';
+  background-color: #7B2E2C; }
 
 .wrapper {
   width: 1080px;
@@ -181,27 +182,28 @@ a {
   transform: translate(-50%); }
 
 .hero {
-  background: #7B2E2C; }
+  background: #7B2E2C;
+  height: 100vh; }
 
 .logo {
-  padding: 55px; }
+  padding: 40px; }
   .logo img {
     width: 200px;
     margin: 0 auto; }
 
 .welcome {
-  font-size: 185px;
+  font-size: 175px;
   text-align: center;
   color: #fff;
   letter-spacing: 1.6px; }
   .welcome span {
     display: block;
-    font-size: 165px; }
+    font-size: 130px; }
 
 .welcome-subtitle {
   text-align: center;
   color: #FAEED6;
-  font-size: 35px;
+  font-size: 32px;
   letter-spacing: 1.6px;
   margin-bottom: 60px; }
   .welcome-subtitle span {
@@ -210,7 +212,7 @@ a {
     .welcome-subtitle span::after {
       content: '';
       display: block;
-      width: 425px;
+      width: 385px;
       border-bottom: 2px solid #FAEED6;
       margin: 0 auto; }
 
@@ -219,3 +221,54 @@ a {
 
 iframe {
   width: 100vw; }
+
+.sign-up {
+  background: #FAEED6;
+  margin-top: -20px;
+  padding-top: 80px; }
+
+.social ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px; }
+  .social ul .fb {
+    margin-right: 20px; }
+  .social ul .twitter {
+    margin-right: 20px;
+    margin-top: 5px; }
+
+.sign-up-call h4 {
+  text-align: center;
+  line-height: 28px;
+  font-size: 20px;
+  margin-bottom: 30px; }
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  form .email {
+    margin: 0 auto 20px;
+    max-width: 400px;
+    width: 100%;
+    padding: 8px 70px 6px;
+    font-size: 20px; }
+  form .sign-up-button {
+    margin: 0 auto 80px;
+    width: 195px;
+    color: #FAEED6;
+    background-color: #7B2E2C;
+    padding: 8px 70px 6px;
+    border-radius: 10px;
+    font-size: 20px; }
+
+.storefront-wrapper {
+  margin: 0;
+  max-width: 100%;
+  width: 100%; }
+  .storefront-wrapper img {
+    width: 100%; }
+
+footer {
+  padding-top: 80px;
+  background: #7B2E2C; }
