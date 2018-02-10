@@ -1,3 +1,43 @@
+.hero {
+    background: $burg;
+}
 
+.logo {
+    padding: 55px;
+    img {
+        width: 200px;
+        margin: 0 auto;
+    }
+}
+
+.welcome {
+    font-size: 185px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1.6px;
+    span {
+        display: block;
+        font-size: 165px;
+    }
+}
+
+.welcome-subtitle {
+    text-align: center;
+    color: $cream;
+    font-size: 35px;
+    letter-spacing: 1.6px;
+    margin-bottom: 60px;
+    span {
+        display: block;
+        margin: 5px;
+        &::after {
+            content: '';
+            display: block;
+            width: 425px;
+            border-bottom: 2px solid $cream;
+            margin: 0 auto;
+        }
+    }
+}
 
 

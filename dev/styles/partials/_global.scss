@@ -1,7 +1,16 @@
+@font-face {
+    font-family: Carrosserie;
+    src: url("/public/styles/Carrosserie.otf") format("opentype");
+}
+
+body {
+    font-family: 'Carrosserie';
+}
+
 .wrapper {
 	width: 1080px;
 	max-width: 90%;
-	margin: 100px auto;
+	margin: 0 auto;
 }
 
 h1, h2, h3, h4, p {margin: 0;}
@@ -16,9 +25,10 @@ p {
 
 ul {
 	padding: 0;
-	li {
-		list-style-type: none;
-	}
+}
+
+li {
+	list-style-type: none;
 }
 
 img {
