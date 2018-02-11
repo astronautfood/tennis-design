@@ -1,6 +1,6 @@
 .hero {
     background: $burg;
-    height: 100vh;
+    // height: 100vh;
 }
 
 .logo {
@@ -16,9 +16,15 @@
     text-align: center;
     color: #fff;
     letter-spacing: 1.6px;
+    @include respond_to(small) {
+        font-size: 130px;
+    }
     span {
         display: block;
         font-size: 130px;
+        @include respond_to(small) {
+            font-size: 90px;
+        }
     }
 }
 
@@ -28,15 +34,24 @@
     font-size: 32px;
     letter-spacing: 1.6px;
     margin-bottom: 60px;
+    @include respond_to(small) {
+       line-height: 40px;
+    }
     span {
         display: block;
         margin: 5px;
+        @include respond_to(small) {
+            text-decoration: underline;
+        }
         &::after {
             content: '';
             display: block;
             width: 385px;
             border-bottom: 2px solid $cream;
             margin: 0 auto;
+            @include respond_to(small) {
+                border: none;
+            }
         }
     }
 }

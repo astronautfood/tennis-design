@@ -182,8 +182,7 @@ a {
   transform: translate(-50%); }
 
 .hero {
-  background: #7B2E2C;
-  height: 100vh; }
+  background: #7B2E2C; }
 
 .logo {
   padding: 40px; }
@@ -196,9 +195,15 @@ a {
   text-align: center;
   color: #fff;
   letter-spacing: 1.6px; }
+  @media only screen and (max-width: 480px) {
+    .welcome {
+      font-size: 130px; } }
   .welcome span {
     display: block;
     font-size: 130px; }
+    @media only screen and (max-width: 480px) {
+      .welcome span {
+        font-size: 90px; } }
 
 .welcome-subtitle {
   text-align: center;
@@ -206,15 +211,24 @@ a {
   font-size: 32px;
   letter-spacing: 1.6px;
   margin-bottom: 60px; }
+  @media only screen and (max-width: 480px) {
+    .welcome-subtitle {
+      line-height: 40px; } }
   .welcome-subtitle span {
     display: block;
     margin: 5px; }
+    @media only screen and (max-width: 480px) {
+      .welcome-subtitle span {
+        text-decoration: underline; } }
     .welcome-subtitle span::after {
       content: '';
       display: block;
       width: 385px;
       border-bottom: 2px solid #FAEED6;
       margin: 0 auto; }
+      @media only screen and (max-width: 480px) {
+        .welcome-subtitle span::after {
+          border: none; } }
 
 .map-wrapper {
   margin: 0; }
@@ -252,7 +266,8 @@ form {
     max-width: 400px;
     width: 100%;
     padding: 8px 70px 6px;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: center; }
   form .sign-up-button {
     margin: 0 auto 80px;
     width: 195px;
