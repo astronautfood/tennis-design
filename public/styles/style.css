@@ -180,6 +180,8 @@ a {
   position: relative;
   left: 50%;
   transform: translate(-50%); }
+  .enter-site a {
+    color: #7B2E2C; }
 
 .hero {
   background: #7B2E2C; }
@@ -187,7 +189,7 @@ a {
 .logo {
   padding: 40px; }
   .logo img {
-    width: 200px;
+    width: 180px;
     margin: 0 auto; }
 
 .welcome {
@@ -251,6 +253,9 @@ iframe {
     margin-right: 20px;
     margin-top: 5px; }
 
+.social li {
+  width: 35px; }
+
 .sign-up-call h4 {
   text-align: center;
   line-height: 28px;
@@ -276,6 +281,29 @@ form {
     padding: 8px 70px 6px;
     border-radius: 10px;
     font-size: 20px; }
+
+.hours-wrapper {
+  margin: 155px auto 140px;
+  display: flex;
+  justify-content: center; }
+
+.kensington, .gerrard {
+  text-align: center;
+  font-size: 25px; }
+
+.kensington {
+  margin-right: 160px; }
+
+.kensington-title, .gerrard-title {
+  color: #FAEED6;
+  text-decoration: underline; }
+
+.kensington-hours, .gerrard-hours {
+  color: #fff;
+  margin-top: 10px; }
+
+.kensington-hours li, .gerrard-hours li {
+  margin: 7px; }
 
 .storefront-wrapper {
   margin: 0;

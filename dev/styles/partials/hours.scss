@@ -1,0 +1,29 @@
+.hours-wrapper {
+    margin: 155px auto 140px;
+    display: flex;
+    justify-content: center;
+}
+
+.kensington, .gerrard {
+    text-align: center;
+    font-size: 25px;
+}
+
+.kensington {
+    margin-right: 160px; 
+}
+
+.kensington-title, .gerrard-title {
+    color: $cream;
+    text-decoration: underline;
+}
+
+.kensington-hours, .gerrard-hours {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.kensington-hours li, .gerrard-hours li {
+    margin: 7px;
+}
+
