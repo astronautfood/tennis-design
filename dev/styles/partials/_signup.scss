@@ -45,22 +45,27 @@
     margin:0 auto 20px;
     max-width: 400px;
     width: 100%;
-    padding: 8px 70px 6px;
+    padding: 9px 70px 8px;
     font-size: 20px;
     text-align: center;
     height:-moz-fit-content;
      @media screen and (max-width: 480px)  {
        padding: 5px 10px 5px;
     }
-}   
+} 
 
-#mc-embedded-subscribe.button {
+.clear {
+    display: flex;
+    justify-content: center;
+}
+
+input#mc-embedded-subscribe.button {
     font-family: 'Carrosserie';
     margin: 0 auto 80px;
     width: 195px;
     color: $cream;
     background-color: $burg;
-    padding: 5px 70px 32px;
+    padding: 9px 70px 8px;
     border-radius: 10px;
     font-size: 20px;
 }
