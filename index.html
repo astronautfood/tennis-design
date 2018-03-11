@@ -4,76 +4,95 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 	<title>Document</title>
 </head>
 <body>
 	<header>
 		<div class="wrapper">
 			<div class="hamburger-menu">
-				<div class="bar hamburger-bar"></div>
+				<div class="hamburger-bar"></div>
 			</div>
-			<div class="settings">
-				<div class="bar settings-bar"><span class="settings-bar-toggle"></span></div>
+			<div class="settings-menu">
+				<input type="range" min="1" max="100" value="20" class="slider">
+				<input type="range" min="1" max="100" value="80" class="slider">
+				<input type="range" min="1" max="100" value="20" class="slider">
 			</div>
 		</div>
 	</header>
 	<main class="results">
 		<div class="results-header">
 			<div class="wrapper">
-				<h2 class="results-amount">21 Results</h2>
-				<button class="results-filter results-clear">Clear Filter(s)</button>
-				<button class="resutls-filter results-edit">Edit Filter(s)</button>
-			</div>
-		</div>
-		<div class="featured">
-			<div class="feaured-image">
-				<img src="/public/assets/img1.jpg" alt="Close up of musician looking down at his instrument">
-				<button class="featured-buy">Buy Tickets</button>
-			</div>
-			<div class="featured-info">
-				<h2 class="featured-artists">Grooz + Sandcatchers + Turkwaz</h2>
-				<p class="featured-presented">Presented by: Ashkenaz Foundation and Small World Music Society</p>
-				<div class="featured-event-info">
-					<div class="featured-event__world">
-						<img src="/public/assets/world.svg" alt="Icon of the globe">
-						<p>Central America</p>
-					</div>
-					<div class="featured-event__when">
-						<img src="/public/assets/time.svg" alt="Icon of clock">
-						<p>Thu, Sep 14 9:00pm</p>
-					</div>
-					<div class="featured-event__location">
-						<img src="/public/assets/location.svg" alt="Icon of location pin">
-						<p>Revival 5km</p>
+				<div class="results-flex-container">
+					<h2 class="results-amount">21 Results</h2>
+					<div class="results-buttons"> 
+						<button class="results-filter results-clear">Clear Filter(s)</button>
+						<button class="resutls-filter results-edit">Edit Filter(s)</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="featured">
-			<div class="feaured-image">
-				<img src="/public/assets/img2.jpg" alt="Musician singing soulfully into her microphone">
-				<button class="featured-buy">Buy Tickets</button>
+		<div class="main-container">
+			<div class="featured">
+				<div class="featured-wrapper">
+					<div class="featured-image">
+						<img src="/public/assets/img1.jpg" alt="Close up of musician looking down at his instrument">
+						<div class="featured-buy">
+							<button>Buy Tickets</button>
+						</div>
+					</div>
+					<div class="featured-info">
+						<h2 class="featured-artists"><span>Grooz</span> + Sandcatchers + Turkwaz</h2>
+						<p class="featured-presented"><span>Presented by:</span> Ashkenaz Foundation and Small World Music Society</p>
+						<div class="featured-event-info">
+							<div class="featured-event-info__world">
+								<img src="/public/assets/world.svg" alt="Icon of the globe">
+								<p>Central America</p>
+							</div>
+							<div class="featured-event-info__when">
+								<img src="/public/assets/time.svg" alt="Icon of clock">
+								<p>Thu, Sep 14 9:00pm</p>
+							</div>
+							<div class="featured-event-info__location">
+								<img src="/public/assets/location.svg" alt="Icon of location pin">
+								<p><span>Revival</span> 5km</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="featured-info">
-				<h2 class="featured-artists">Grooz + Sandcatchers + Turkwaz</h2>
-				<p class="featured-presented">Presented by: Ashkenaz Foundation and Small World Music Society</p>
-				<div class="featured-event-info">
-					<div class="featured-event__world">
-						<img src="/public/assets/world.svg" alt="Icon of the world">
-						<p>Central America</p>
+			<div class="featured">
+				<div class="featured-wrapper">
+					<div class="featured-image">
+						<img src="/public/assets/img2.jpg" alt="Musician singing soulfully into her microphone">
+						<div class="featured-buy">
+							<button>Buy Tickets</button>
+						</div>
 					</div>
-					<div class="featured-event__when">
-						<img src="/public/assets/time.svg" alt="Icon of clock">
-						<p>Thu, Sep 14 9:00pm</p>
-					</div>
-					<div class="featured-event__location">
-						<img src="/public/assets/location.svg" alt="Icon of location pin">
-						<p>Revival 5km</p>
+					<div class="featured-info">
+						<h2 class="featured-artists"><span>Grooz</span> + Sandcatchers + Turkwaz</h2>
+						<p class="featured-presented"><span>Presented by:</span> Ashkenaz Foundation and Small World Music Society</p>
+						<div class="featured-event-info">
+							<div class="featured-event-info__world">
+								<img src="/public/assets/world.svg" alt="Icon of the world">
+								<p>Central America</p>
+							</div>
+							<div class="featured-event-info__when">
+								<img src="/public/assets/time.svg" alt="Icon of clock">
+								<p>Thu, Sep 14 9:00pm</p>
+							</div>
+							<div class="featured-event-info__location">
+								<img src="/public/assets/location.svg" alt="Icon of location pin">
+								<p><span>Revival</span> 5km</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</main>
-	<script src="/dev/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="/public/scripts/main.js"></script>
 </body>
 </html>
