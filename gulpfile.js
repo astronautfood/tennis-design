@@ -19,8 +19,8 @@ gulp.task('styles', () => {
 		.pipe(gulp.dest('./public/styles'))
 });
 
-gulp.task('js', () => {
-	return browserify('dev/scripts/**/*.js', {debug: true})
+gulp.task('scripts', () => {
+	return browserify('dev/scripts/main.js', {debug: true})
 		.transform('babelify', {
 			sourceMaps: true,
 			presets: ['es2015']
@@ -28,9 +28,9 @@ gulp.task('js', () => {
 		.bundle()
 		.on('error',notify.onError({
 			message: "Error: <%= error.message %>",
-			title: 'Error in JS 💀'
+			title: 'Error in JS ✋'
 		}))
-		// .pipe(source('app.js'))
+		.pipe(source('main.js'))
 		.pipe(buffer())
 		.pipe(gulp.dest('public/scripts'))
 		.pipe(reload({stream:true}));
@@ -61,7 +61,7 @@ gulp.task('bs', () => {
 	});
 });
 
-gulp.task('default', ['bs', 'styles', 'assets'], () => {
+gulp.task('default', ['bs', 'styles', 'assets', 'scripts'], () => {
 	gulp.watch('dev/**/*.js', ['scripts']);
 	gulp.watch('dev/**/*.scss', ['styles']);
 	gulp.watch('./dev/assets/**/*', ['assets']);
