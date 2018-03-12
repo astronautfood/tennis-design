@@ -99,6 +99,10 @@ header {
     outline: none;
 }
 
+.slider::-moz-range-track {
+    background: $blk;
+}
+
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -114,6 +118,8 @@ header {
     width: 15px;
     height: 15px;
     background: $wht;
+    border: 3px solid #000;
+    border-radius: 100px;
     cursor: pointer;
 }
 
