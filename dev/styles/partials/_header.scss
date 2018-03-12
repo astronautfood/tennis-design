@@ -9,10 +9,14 @@ header {
 .hamburger-menu {
 	position: absolute;
     top: 75px;
-    left: 60px;
+    left: 125px;
     width: 65px;
     height: 55px;
-	cursor: pointer;
+    cursor: pointer;
+    
+    @include respond_to(small) {
+        left: 75px;
+    }
 }
 
 .hamburger-bar,
@@ -70,11 +74,15 @@ header {
 
 .settings-menu {
 	position: absolute;
-    top: 75px;
-    right: 60px;
+    top: 63px;
+    right: 125px;
     width: 65px;
     height: 55px;
-	cursor: pointer;
+    cursor: pointer;
+    
+    @include respond_to(small) {
+        right: 75px;
+    }
 }
 
 .slider {
