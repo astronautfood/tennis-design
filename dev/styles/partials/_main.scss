@@ -46,7 +46,7 @@
         padding: 10px 45px;
         border: 1.5px solid $wht;
         border-radius: 100px;
-        transition: 0.5s;
+        transition: 0.3s;
 
         @media screen and (max-width: 1150px)  {
             font-size: 30px;
@@ -66,20 +66,8 @@
         }   
         
         &:hover {
-            border: 1.5px solid $light;
-            color: $light;
-        }
-
-        &:before {
-            border-bottom: 1.5px solid $light;
-            border-left: 1.5px solid $light;
-            transform-origin: 0 100%;
-        }
-
-        &:after {
-            border-top: 1.5px solid $light;
-            border-right: 1.5px solid $light;
-            transform-origin: 0 100%;
+            background-color: $wht;
+            color: $header;
         }
 
         &.results-clear {
@@ -153,6 +141,7 @@
             padding: 15px 35px;
             border: 1.5px solid $body;
             border-radius: 100px;
+            transition: 0.3s;
             
             @media screen and (max-width: 1200px)  {
                 width: 400px;
@@ -161,6 +150,12 @@
             @media screen and (max-width: 1060px)  {
                 width: 300px;
                 font-size: 35px;
+            }
+
+            &:hover {
+                background-color: $wht;
+                color: $header;
+                border: 1.5px solid $wht; 
             }
         }
     }

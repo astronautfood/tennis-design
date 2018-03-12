@@ -149,12 +149,6 @@ h2 {
 p {
   margin-bottom: 15px; }
 
-ul {
-  padding: 0; }
-
-li {
-  list-style-type: none; }
-
 img {
   max-width: 100%;
   display: block;
@@ -162,8 +156,7 @@ img {
 
 a {
   display: inline-block;
-  text-decoration: none;
-  color: #000; }
+  text-decoration: none; }
 
 header {
   padding: 100px 0; }
@@ -299,7 +292,7 @@ header {
   padding: 10px 45px;
   border: 1.5px solid #fff;
   border-radius: 100px;
-  transition: 0.5s; }
+  transition: 0.3s; }
   @media screen and (max-width: 1150px) {
     .results-buttons button {
       font-size: 30px; } }
@@ -314,8 +307,8 @@ header {
       font-size: 15px;
       padding: 10px 15px; } }
   .results-buttons button:hover {
-    border: 1.5px solid #b6d7d3;
-    color: #b6d7d3; }
+    background-color: #fff;
+    color: #2D9B91; }
   .results-buttons button.results-clear {
     margin-right: 30px; }
     @media only screen and (max-width: 768px) {
@@ -370,7 +363,8 @@ header {
       background: #46B0A6;
       padding: 15px 35px;
       border: 1.5px solid #46B0A6;
-      border-radius: 100px; }
+      border-radius: 100px;
+      transition: 0.3s; }
       @media screen and (max-width: 1200px) {
         .featured-buy button {
           width: 400px; } }
@@ -378,6 +372,10 @@ header {
         .featured-buy button {
           width: 300px;
           font-size: 35px; } }
+      .featured-buy button:hover {
+        background-color: #fff;
+        color: #2D9B91;
+        border: 1.5px solid #fff; }
   .featured-info {
     width: 50%;
     padding: 60px 90px 0 60px; }
