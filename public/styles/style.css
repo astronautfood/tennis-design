@@ -238,6 +238,7 @@ header {
   outline: none; }
 
 .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
   appearance: none;
   width: 15px;
   height: 15px;
@@ -247,9 +248,9 @@ header {
   cursor: pointer; }
 
 .slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  background: #000;
+  width: 15px;
+  height: 15px;
+  background: #fff;
   cursor: pointer; }
 
 .results-header {

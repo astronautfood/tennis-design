@@ -100,6 +100,7 @@ header {
 }
 
 .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
     appearance: none;
     width: 15px;
     height: 15px;
@@ -110,9 +111,9 @@ header {
 }
 
 .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    background: $blk;
+    width: 15px;
+    height: 15px;
+    background: $wht;
     cursor: pointer;
 }
 
